@@ -6,10 +6,11 @@ import com.fruitstore.model.TransactionStatus;
 public class Customer {
 
   public String purchase(Store store, Product product, int purchaseQuantity) {
-    if (store.getStock(product) < purchaseQuantity) {
+    int currentStock = store.getStock(product);
+    if (currentStock < purchaseQuantity) {
       return TransactionStatus.STOCKFINISH.toString();
     } else {
-      store.updateStock(product, store.getStock(product) - purchaseQuantity);
+      store.updateStock(product, currentStock - purchaseQuantity);
       return TransactionStatus.SUCCESS.toString();
     }
   }
