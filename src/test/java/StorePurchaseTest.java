@@ -33,4 +33,6 @@ public class StorePurchaseTest {
     Assert.assertEquals("Sorry, we don't have enough stock for your request", purchaseMessage);
     Assert.assertEquals(10, store.getStock(Product.Apple));
   }
+
+  //Can we write more tests?
 }
