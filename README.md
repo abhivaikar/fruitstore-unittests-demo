@@ -11,5 +11,11 @@
 - Mockito for mocking dependencies
 - Jacoco for code coverage
 
+### Project structure
+- The source classes are in src/main/java
+- The unit test classes are in src/test/java
+
 ### How to run the tests?
-Clone this repository and run `mvn clean test` from the command line.
+- Pre-requisite: You need to have [maven](https://maven.apache.org/install.html) & [JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) installed on your system.
+- Clone this repository and run `mvn clean test` from the command line.
+- To see coverage report, open the index.html file in `target/site/jacoco/index.html`
